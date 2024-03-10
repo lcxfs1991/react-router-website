@@ -10,7 +10,7 @@ const srcPath = 'docs';
 const targetPath = './';
 
 const octokit = new Octokit({
-    auth: process.env.GITHUB_TOKEN,
+    auth: process.env.GIT_HUB_TOKEN,
 });
 
 // 递归获取目录下的所有文件  
