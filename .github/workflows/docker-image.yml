@@ -39,6 +39,8 @@ jobs:
       
 
     - name: Build docs
+      env: 
+        GIT_HUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
       run: yarn && npm run fetch && yarn build
 
     - name: Docker build
